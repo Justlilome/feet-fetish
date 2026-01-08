@@ -1,12 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Page</title>
-</head>
-<body>
-  <h1>Hello world</h1>
-  <p>This is my new clean start.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feet Fetish</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top, #ffdde1, #ee9ca7);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #222;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(10px);
+        padding: 2.5rem 2rem;
+        border-radius: 18px;
+        max-width: 460px;
+        width: 94%;
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .tagline {
+        font-size: 0.95rem;
+        color: #555;
+        margin-bottom: 1.5rem;
+      }
+
+      .section-title {
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #cc3366;
+        margin-bottom: 0.5rem;
+      }
+
+      .description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1.75rem;
+      }
+
+      .pill {
+        font-size: 0.8rem;
+        padding: 0.35rem 0.75rem;
+        border-radius: 999px;
+        border: 1px solid rgba(204, 51, 102, 0.2);
+        background: rgba(204, 51, 102, 0.07);
+        color: #802040;
+      }
+
+      .button-row {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .btn-primary,
+      .btn-ghost {
+        cursor: pointer;
+        border-radius: 999px;
+        padding: 0.55rem 1.35rem;
+        font-size: 0.9rem;
+        border: none;
+        outline: none;
+        transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.15s ease,
+          color 0.15s ease;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #ff7eb3, #ff758c);
+        color: #fff;
+        box-shadow: 0 10px 22px rgba(255, 87, 136, 0.5);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 12px 26px rgba(255, 87, 136, 0.6);
+      }
+
+      .btn-ghost {
+        background: transparent;
+        color: #cc3366;
+        border: 1px solid rgba(204, 51, 102, 0.4);
+      }
+
+      .btn-ghost:hover {
+        background: rgba(204, 51, 102, 0.06);
+      }
+
+      .footer-text {
+        font-size: 0.75rem;
+        color: #777;
+        margin-top: 1.75rem;
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          padding: 2rem 1.5rem;
+        }
+
+        h1 {
+          font-size: 1.7rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Feet Fetish HQ</h1>
+      <p class="tagline">A playful little corner of the internet—just for you.</p>
+
+      <p class="section-title">About this page</p>
+      <p class="description">
+        This is a personal space for experimenting, learning, and having fun with a very
+        specific aesthetic. Nothing here is serious, everything is a work in progress.
+      </p>
+
+      <div class="pill-row">
+        <span class="pill">✨ personal project</span>
+        <span class="pill">🎨 work in progress</span>
+        <span class="pill">💻 built on GitHub</span>
+      </div>
+
+      <div class="button-row">
+        <button class="btn-primary" type="button">Enter the gallery</button>
+        <button class="btn-ghost" type="button">Maybe later</button>
+      </div>
+
+      <p class="footer-text">More coming soon. This is just the first step.</p>
+    </main>
+  </body>
 </html>
