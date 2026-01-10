@@ -97,12 +97,16 @@
     }
 
     .cta {
-      font-size: 0.88rem;
-      padding: 8px 14px;
-      border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      background: transparent;
-    }
+  font-size: 0.88rem;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  color: #f7f3f0;
+  text-decoration: none;   /* remove underline for links */
+  display: inline-block;   /* makes the clickable area match the pill */
+  cursor: pointer;
+}
 
     /* Image gallery */
     .gallery {
@@ -194,9 +198,6 @@
     </p>
 
     <div class="cta-row">
-      <span class="cta">Request custom content</span>
-      <span class="cta">Just look around</span>
-    </div>
-  </div>
-</body>
-</html>
+  <a class="cta" href="mailto:justlilome2001@gmail.com?subject=Custom%20Content%20Request&body=Hi%20Justlilome%2C%0A%0AI%27d%20like%20to%20request%20custom%20content.%20Here%27s%20what%20I%20have%20in%20mind%3A%0A%0A-%20Type%20of%20content%3A%0A-%20Length%20or%20number%20of%20photos%3A%0A-%20Any%20specific%20details%3A%0A%0AThank%20you!">Request custom content</a>
+  <span class="cta">Just look around</span>
+</div>
