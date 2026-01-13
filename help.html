@@ -48,8 +48,7 @@
 
     h2 {
       font-size: 1.2rem;
-      margin-top: 24px;
-      margin-bottom: 6px;
+      margin: 0 0 6px 0;
       font-weight: 700;
       letter-spacing: 0.05em;
       text-transform: uppercase;
@@ -68,6 +67,19 @@
       margin-top: 16px;
     }
 
+    .idea-block {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .idea-title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.4rem;
+      margin: 0 0 4px 0;
+      color: #ffd6f5;
+    }
+
     .idea-card {
       padding: 14px 16px;
       border-radius: 14px;
@@ -75,11 +87,11 @@
       border: 1px solid rgba(255, 255, 255, 0.15);
     }
 
-    .idea-title {
-      font-family: 'Dancing Script', cursive;
-      font-size: 1.4rem;
-      margin: 0 0 6px 0;
-      color: #ffd6f5;
+    .idea-img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      object-fit: cover;
     }
 
     .cta-row {
@@ -112,21 +124,31 @@
     </p>
 
     <div class="idea-grid">
-      <div class="idea-card">
+      <!-- Sexy Stilettos block -->
+      <div class="idea-block">
         <h2 class="idea-title">Sexy Stilettos</h2>
-        <p>
-          Petite feet balanced in high heels, ankle straps, pointed toes, and slow angles that show off arches and curves without ever showing my face.
-        </p>
+        <div class="idea-card">
+          <!-- Replace stilettos.jpg with your actual filename -->
+          <!-- <img src="stilettos.jpg" alt="Sexy stilettos on petite feet" class="idea-img"> -->
+          <p>
+            Petite feet balanced in high heels, ankle straps, pointed toes, and slow angles that show off arches and curves without ever showing my face.
+          </p>
+        </div>
       </div>
 
-      <div class="idea-card">
+      <!-- Wet & Bubbly block -->
+      <div class="idea-block">
         <h2 class="idea-title">Wet &amp; Bubbly</h2>
-        <p>
-          Soapy, steamy, or fresh-from-the-bath shots—wet skin, bubbles clinging to toes, and close-ups that make you imagine the warmth.
-        </p>
+        <div class="idea-card">
+          <!-- Replace wet-bubbly.jpg with your actual filename -->
+          <!-- <img src="wet-bubbly.jpg" alt="Wet and bubbly petite feet" class="idea-img"> -->
+          <p>
+            Soapy, steamy, or fresh-from-the-bath shots—wet skin, bubbles clinging to toes, and close-ups that make you imagine the warmth.
+          </p>
+        </div>
       </div>
 
-      <!-- Add more idea-card blocks later as you think of new themes -->
+      <!-- Add more idea-blocks later as you think of new themes -->
     </div>
 
     <p style="margin-top: 22px;">
@@ -138,5 +160,5 @@
       <a class="cta" href="index.html">Back to main page</a>
     </div>
   </div>
-  </body>
+</body>
 </html>
