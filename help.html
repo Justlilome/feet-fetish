@@ -1,31 +1,164 @@
-<div class="idea-grid">
-  <!-- Sexy Stilettos block -->
-  <div class="idea-block">
-    <h2 class="idea-title">sexy stilettos</h2>
-    <div class="idea-card">
-      <img src="image-9.jpg" class="idea-img" alt="Sexy stilettos idea 1">
-      <!-- add more images here if you want -->
-      <!-- <img src="image-10.jpg" class="idea-img" alt="Sexy stilettos idea 2"> -->
-    </div>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Need a little help? · Justlilome</title>
 
-  <!-- Wet & Bubbly block -->
-  <div class="idea-block">
-    <h2 class="idea-title">wet &amp; bubbly</h2>
-    <div class="idea-card">
-      <img src="image-8.jpg" class="idea-img" alt="Wet and bubbly idea 1">
-      <!-- add more images here if you want -->
-      <!-- <img src="image-12.jpg" class="idea-img" alt="Wet and bubbly idea 2"> -->
-    </div>
-  </div>
+  <!-- Same Google Fonts as main page -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 
-  <!-- Sensual Appetite block -->
-  <div class="idea-block">
-    <h2 class="idea-title">sensual appetite</h2>
-    <div class="idea-card">
-      <img src="image-13.jpg" class="idea-img" alt="Sensual appetite idea">
-      <!-- change image-13.jpg to whatever filename you’re using -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Merriweather', serif;
+      background-color: #0b0b0f;
+      color: #f7f3f0;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 24px;
+      background: rgba(10, 8, 12, 0.9);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .page-title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin: 0 0 12px 0;
+      letter-spacing: 0.04em;
+      color: #ffe0f0;
+    }
+
+    .subtitle {
+      font-size: 1.0rem;
+      font-weight: 300;
+      color: #ffe0f0;  /* same pink as title */
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin: 0 0 6px 0;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #ffe0f0;
+    }
+
+    p {
+      margin: 6px 0 14px 0;
+      font-size: 0.96rem;
+    }
+
+    .idea-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 16px;
+    }
+
+    .idea-block {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .idea-title {
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.3rem;   /* updated size */
+      margin: 0 0 4px 0;
+      color: #ffe0f0;       /* exact same pink */
+    }
+
+    .idea-card {
+      padding: 10px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .idea-img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .cta-row {
+      margin-top: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .cta {
+      font-size: 0.88rem;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: transparent;
+      color: #f7f3f0;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    a {
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1 class="page-title">Need a little help?</h1>
+    <p class="subtitle">
+      Not sure what to ask for? Here are a few ideas to get your imagination going.
+    </p>
+
+    <div class="idea-grid">
+      <!-- Sexy Stilettos block -->
+      <div class="idea-block">
+        <h2 class="idea-title">sexy stilettos</h2>
+        <div class="idea-card">
+          <img src="image-9.jpg" class="idea-img" alt="Sexy stilettos idea">
+        </div>
+      </div>
+
+      <!-- Wet & Bubbly block -->
+      <div class="idea-block">
+        <h2 class="idea-title">wet &amp; bubbly</h2>
+        <div class="idea-card">
+          <img src="image-8.jpg" class="idea-img" alt="Wet and bubbly idea">
+        </div>
+      </div>
+
+      <!-- Sensual Appetite block (new third idea) -->
+      <div class="idea-block">
+        <h2 class="idea-title">sensual appetite</h2>
+        <div class="idea-card">
+          <!-- change this filename to whatever image you want for this idea -->
+          <img src="image-13.jpg" class="idea-img" alt="Sensual appetite idea">
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top: 22px;">
+      If one of these themes turns you on, mention it in your email—tell me the vibe you like, how many photos or clips you’re thinking about, and how soft or intense you want the teasing.
+    </p>
+
+    <div class="cta-row">
+      <a class="cta" href="mailto:justlilome2001@gmail.com?subject=Custom%20Content%20Idea&body=Hi%20Justlilome%2C%0A%0AI%27m%20interested%20in%20a%20custom%20set%20inspired%20by%20your%20%22Need%20a%20little%20help%3F%22%20page.%0A%0AHere%27s%20what%20I%27m%20thinking%3A%0A-%20Theme%20%28Sexy%20Stilettos%2C%20Wet%20%26%20Bubbly%2C%20etc.%29%3A%0A-%20Photos%20or%20clips%3A%0A-%20Any%20specific%20details%3A%0A%0AThank%20you!">Email me this idea</a>
+      <a class="cta" href="index.html">Back to main page</a>
     </div>
   </div>
-</div>
-      
+</body>
+</html>
