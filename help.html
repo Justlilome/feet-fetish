@@ -222,50 +222,49 @@
     </p>
 
     <!-- Video teaser section -->
-    <div class="help-video-section">
-      <p class="help-intro">
-        Want a little preview first? Tap below for a short, sensual teaser.
-      </p>
+<div class="help-video-section">
+  <p class="help-intro">
+    Want a little preview first? Tap below for a short, sensual teaser.
+  </p>
 
-      <button class="video-toggle" onclick="showHelpVideo()">
-        Play Teaser
-      </button>
-      <div id="help-video-wrapper" class="help-video-wrapper" style="display: none;">
-        <video id="help-video" class="help-video" controls>
-          <!-- Update this path to your real video file in the repo -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ewWiQI4J5h4?si=t20LME8zrxoQv3_l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-.Start at: 0:01;
-Embed Options: Show player controls;
-Enable: privacy-enhanced mode;
-Copy: Downloading....
-Keep this window open to continue.
-View: source, video; 
-<source src="https://youtu.be/ewWiQI4J5h4?si=YDN4Eh4-ZBa2lVkx" type="video/mp4">
-</video>
-</div>
-</div>
-<!-- CTA row -->
-    <div class="cta-row">
-      <a class="cta" href="mailto:justlilome2001@gmail.com?subject=Custom%20Content%20Idea&body=Hi%20Justlilome%2C%0A%0AI%27m%20interested%20in%20a%20custom%20set%20inspired%20by%20your%20%22Need%20a%20little%20help%3F%22%20page.%0A%0AHere%27s%20what%20I%27m%20thinking%3A%0A-%20Theme%20%28Sexy%20Stilettos%2C%20Wet%20%26%20Bubbly%2C%20etc.%29%3A%0A-%20Photos%20or%20clips%3A%0A-%20Any%20specific%20details%3A%0A%0AThank%20you!">
-        Email me this idea
-      </a>
-      <a class="cta" href="index.html">Back to main page</a>
+  <button class="video-toggle" onclick="showHelpVideo()">
+    Play Teaser
+  </button>
+
+  <div id="help-video-wrapper" class="help-video-wrapper" style="display: none;">
+    <div class="help-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px;">
+      <iframe
+        id="help-video"
+        src="https://www.youtube.com/embed/ewWiQI4J5h4?si=t20LME8zrxoQv3_l&start=1&controls=1&modestbranding=1&rel=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;"
+      ></iframe>
     </div>
   </div>
+</div>
 
-  <script>
-    function showHelpVideo() {
-      var wrapper = document.getElementById('help-video-wrapper');
-      var video = document.getElementById('help-video');
+<script>
+  function showHelpVideo() {
+    var wrapper = document.getElementById('help-video-wrapper');
+    var iframe = document.getElementById('help-video');
 
-      if (wrapper.style.display === 'none' || wrapper.style.display === '') {
-        wrapper.style.display = 'block';
-        video.play();
-      } else {
-        video.pause();
-        wrapper.style.display = 'none';
-      }
+    // Get current src without autoplay
+    var baseSrc = 'https://www.youtube.com/embed/ewWiQI4J5h4?si=t20LME8zrxoQv3_l&start=1&controls=1&modestbranding=1&rel=0';
+
+    if (wrapper.style.display === 'none' || wrapper.style.display === '') {
+      wrapper.style.display = 'block';
+      // Add autoplay when opened
+      iframe.src = baseSrc + '&autoplay=1';
+    } else {
+      // Stop video when closing by removing autoplay and resetting src
+      iframe.src = baseSrc;
+      wrapper.style.display = 'none';
     }
-  </script>
+  }
+</script>
 </body>
 </html>
