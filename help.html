@@ -222,12 +222,7 @@
     </p>
 
     <!-- Video teaser section -->
-<div class="help-video-section">
-  <p class="help-intro">
-    Want a little preview first? Tap below for a short, sensual teaser.
-  </p>
-
-  <button class="video-toggle" onclick="showHelpVideo()">
+<button class="video-toggle" onclick="toggleHelpVideo()">
     Play Teaser
   </button>
 
@@ -235,32 +230,36 @@
     <div class="help-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px;">
       <iframe
         id="help-video"
-        src="https://audiomack.com//embed/lizzen-music/song/sweet-thing-work-it-out" scrolling="no" width="100%" height="252" frameborder="0" title="Sweet Thing (Work It Out)"></iframe>"
-        title="audiomack video player"
+        src="https://audiomack.com/embed/lizzen-music/song/sweet-thing-work-it-out"
+        scrolling="no"
+        width="100%"
+        height="252"
         frameborder="0"
+        title="Sweet Thing (Work It Out)"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;"
-      ></iframe>
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;">
+      </iframe>
     </div>
   </div>
 </div>
 
+
 <script>
-  function showHelpVideo() {
+  function toggleHelpVideo() {
     var wrapper = document.getElementById('help-video-wrapper');
     var iframe = document.getElementById('help-video');
 
-    // Get current src without autoplay
-    var baseSrc = "https://audiomack.com//embed/lizzen-music/song/sweet-thing-work-it-out" scrolling="no" width="100%" height="252" frameborder="0" title="Sweet Thing (Work It Out)"></iframe>';
+    // Base URL WITHOUT autoplay
+    var baseSrc = 'https://audiomack.com/embed/lizzen-music/song/sweet-thing-work-it-out';
 
     if (wrapper.style.display === 'none' || wrapper.style.display === '') {
+      // Show and autoplay
       wrapper.style.display = 'block';
-      // Add autoplay when opened
-      iframe.src = baseSrc + '&autoplay=1';
+      iframe.src = baseSrc + '?autoplay=1';
     } else {
-      // Stop video when closing by removing autoplay and resetting src
+      // Hide and stop
       iframe.src = baseSrc;
       wrapper.style.display = 'none';
     }
