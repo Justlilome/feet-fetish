@@ -4,22 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Live Adult Content</title>
-
-  <!-- Same Google Fonts as main page -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Upright:wght@200..800&family=Birthstone:wght@400;500&family=Cormorant+Upright:wght@300;400;500;600;700&family=Happy+Monkey&family=Hurricane&family=IM+Fell+French+Canon:ital@0;1&family=Inspiration&family=Lavishly+Yours&family=Love+Light&family=MonteCarlo&family=Montez&family=Ms+Madi&family=Original+Surfer&family=Parisienne&family=Passions+Conflict&family=Qwigley&family=Rouge+Script&family=Song+Myung&family=Style+Script&family=WindSong:wght@400;500&family=Zen+Kurenaido&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Passions+ Conflict&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Lovers+Quarrel&family=MonteCarlo&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Style+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: "Cormorant Upright", serif;
-       font-weight: 500;
-      font-style: normal;
+      font-weight: 500;
       background-color: #0b0b0f;
       color: #f7f3f0;
       line-height: 1.6;
@@ -36,36 +29,27 @@
     }
 
     .page-title {
-      font-family: 'Birthstone', cursive;
-      font-size: 8.0rem;
+      font-family: "Birthstone", cursive;
+      font-size: 8rem;
       font-weight: 400;
-      margin: 0 0 12px 0;
+      margin: 0 0 12px;
       letter-spacing: 0.04em;
       color: #ff00ff;
     }
 
     .subtitle {
-      font-family: "Cormorant Upright", serif;
-      font-weight: 400;
-      font-style: normal;
       font-size: 1.5rem;
-       color: #f7f3f0;
       margin-bottom: 20px;
     }
 
     h2 {
-       font-family: "Birthstone", cursive;
-      font-weight: 700;
+      font-family: "Birthstone", cursive;
       font-style: italic;
-      margin: 0 0 6px 0;
-       font-size: 1.5rem;
-      letter-spacing: 0.05em;
       color: #ffe0f0;
-      margin-bottom: 20px;
     }
 
     p {
-      margin: 6px 0 14px 0;
+      margin: 6px 0 14px;
       font-size: 0.96rem;
     }
 
@@ -84,10 +68,8 @@
 
     .idea-title {
       font-family: "Birthstone", cursive;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 2.0rem;
-      margin: 0 0 4px 0;
+      font-size: 2rem;
+      margin: 0 0 4px;
       color: #ff00ff;
     }
 
@@ -105,199 +87,317 @@
       object-fit: cover;
     }
 
-    
+    .idea-video {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+    }
 
     .theme-note {
       font-family: "Birthstone", cursive;
-      font-weight: 500;
-      font-style: normal;
-      font-size: 2.0rem;
+      font-size: 2rem;
       color: #ff00ff;
       margin-top: 22px;
       margin-bottom: 22px;
     }
 
-    .cta-row {
-      margin-top: 22px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+    .order-list {
+      margin: 32px 0;
     }
 
-    .cta {
-      font-size: 0.88rem;
-      padding: 8px 14px;
-      border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      background: transparent;
+    .order-item {
+      margin-bottom: 18px;
+    }
+
+    .order-button {
+      width: 100%;
+      text-align: left;
+      padding: 14px 16px;
+      border: 1px solid rgba(255, 0, 255, 0.55);
+      border-radius: 12px;
+      background: rgba(255, 0, 255, 0.08);
       color: #f7f3f0;
-      text-decoration: none;
-      display: inline-block;
-      cursor: pointer;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    /* Video teaser section */
-    .help-video-section {
-      margin-top: 24px;
-      text-align: center;
-    }
-
-    .help-intro {
-      font-family: "Birthstone", cursive;
-      font-weight: 400;
-      font-style: normal;
-      color: #ff00ff;
-      margin-top: 22px;
-      margin-bottom: 12px;
-    }
-
-    .video-toggle {
-      background-color: #ff00ff;
-      color: #ffffff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 999px;
       cursor: pointer;
       font-family: inherit;
-      font-size: 0.95rem;
+      font-size: 1.2rem;
     }
 
+    .order-button:hover {
+      background: rgba(255, 0, 255, 0.2);
+    }
+
+    .order-description {
+      margin: 8px 0;
+      color: #e8dce5;
+    }
+
+    .order-form-wrapper {
+      display: none;
+      margin-top: 12px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .order-form-wrapper.open {
+      display: block;
+    }
+
+    .order-form label {
+      display: block;
+      margin-top: 12px;
+      margin-bottom: 4px;
+    }
+
+    .order-form input,
+    .order-form textarea,
+    .order-form select {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 8px;
+      background: #17131b;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    .order-form textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .order-submit,
+    .video-toggle,
+    .cta {
+      margin-top: 16px;
+      padding: 10px 18px;
+      border: 0;
+      border-radius: 999px;
+      background: #ff00ff;
+      color: #ffffff;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    .order-submit:hover,
     .video-toggle:hover {
-      background-color: #e000e0;
+      background: #e000e0;
     }
 
     .help-video-wrapper {
+      display: none;
       margin-top: 16px;
+      text-align: center;
     }
 
     .help-video {
       max-width: 100%;
       border-radius: 8px;
     }
-     
-    .idea-video {
-      width: 100%;
-      border-radius: 10px;
-      display: block;
-      object-fit: cover;
+
+    .age-notice {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #d8cbd5;
     }
   </style>
 </head>
 <body>
   <div class="page">
     <h1 class="page-title">Items and Services</h1>
+<p class="subtitle">
+  Personalized items: email me with the details of what you are into or what you want your video to be about. The more details you give, the better. You must include whether you want both cast members or just one.
+  <br><br>
+  Live Studio: a private, discreet performance at a designated place. Depending on how personalized your request is, delivery time may vary.
+</p>
 
-    <p class="subtitle"> Personalized Items: email me with the details of what you are into or what you want your video to be about; the more details you give, the better. You must include whether you want both cast members or just one.
-    Live Studio: a private, discreet performance at a designated place. * Depending on how personalized and what fetish your request is, it will determine delivery time. If at any time you have questions, please email. </p>
-
-    <!-- Ideas grid -->
-    <div class="idea-grid">
-      <!-- Sexy Stilettos block -->
-      <div class="idea-block">
-        <h2 class="idea-title">Personalized Video</h2>
-        <div class="idea-card">
-          <img src="menroyreno.jpg" class="idea-img" alt="Personalized Videos">
-        </div>
-        <h2 class="idea">30 min video of both cast members performing the ideas you want. Video is one of a kind, made just for you. Delivery will be within 24 hours, sometimes sooner. $350</h2>
-      </div>
-
-      <!-- Wet & Bubbly block -->
-      <div class="idea-block">
-        <h2 class="idea-title">Wet &amp; Bubbly</h2>
-        <div class="idea-card">
-          <img src="image-8.jpg" class="idea-img" alt="Wet and bubbly idea">
-        </div>
-      </div>
-
-      <!-- Sensual block -->
-      <div class="idea-block">
-        <h2 class="idea-title">Sensual</h2>
-        <div class="idea-card">
-          <img src="image-t.jpg" class="idea-img" alt="Sensual idea">
-        </div>
-      </div>
-
-      <!-- I'm Real block -->
-      <div class="idea-block">
-        <h2 class="idea-title">I'm Real</h2>
-        <div class="idea-card">
-          <img src="image-5~2.jpg" class="idea-img" alt="I'm Real idea">
-        </div>
-      </div>
+<div class="idea-grid">
+  <div class="idea-block">
+    <h2 class="idea-title">Personalized Video</h2>
+    <div class="idea-card">
+      <img src="menroyreno.jpg" class="idea-img" alt="Personalized Videos">
     </div>
+    <h2>
+      30-minute video of both cast members performing your requested ideas. One of a kind and made just for you. Delivery will be within 24 hours, sometimes sooner. $350.
+    </h2>
+  </div>
 
-    <!-- XXX video idea -->
-    <div class="idea-block">
-      <h2 class="idea-title">Model used</h2>
-      <div class="idea-card">
-        <video class="idea-video" controls loop playsinline>
-  <source src="headjob.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-       
-      </div>
+  <div class="idea-block">
+    <h2 class="idea-title">Wet &amp; Bubbly</h2>
+    <div class="idea-card">
+      <img src="image-8.jpg" class="idea-img" alt="Wet and bubbly idea">
     </div>
+  </div>
 
-    <p class="theme-note">
-      If one of these themes turns you on, mention it in your email – tell me the vibe you like,
-      how many photos or clips you’re thinking about, and how soft or intense you want the teasing. 
-    </p>
-     <p>If you'd like to order something a little more adult and want xxxvideo, please add the details in the email, and I will respond with delivery and payment info. 
-      F.Y.I xxxvideos are personalized and do include my face, the video posted here is not me, just for idea purposes!!
-     </p>
-   
-    <!-- Video teaser section -->
-<button class="video-toggle" onclick="toggleHelpVideo()">
-    Play Teaser
-  </button>
+  <div class="idea-block">
+    <h2 class="idea-title">Sensual</h2>
+    <div class="idea-card">
+      <img src="image-t.jpg" class="idea-img" alt="Sensual idea">
+    </div>
+  </div>
 
-  <div id="help-video-wrapper" class="help-video-wrapper" style="display: none;">
-    <button class="cta" onclick="window.location.href='index.html';">
-  ⟵ Back to Home
-</button>
-    <div class="help-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px;">
-      <iframe
-        id="help-video"
-        src="<source src="https://justlilome.github.io/feet-fetish/headjob.mp4
-" type="video/mp4">
-"
-        scrolling="no"
-        width="100%"
-        height="252"
-        frameborder="0"
-        title="headjob.mp4"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;">
-      </iframe>
+  <div class="idea-block">
+    <h2 class="idea-title">I'm Real</h2>
+    <div class="idea-card">
+      <img src="image-5~2.jpg" class="idea-img" alt="I'm Real idea">
     </div>
   </div>
 </div>
 
+<section class="order-list">
+  <h2 class="idea-title">Choose an Item</h2>
 
-  <script>
-function toggleHelpVideo() {
-  const wrapper = document.getElementById('help-video-wrapper');
+  <div class="order-item">
+    <button class="order-button" type="button" onclick="toggleOrderForm('video-form')">
+      Personalized Video
+    </button>
 
-  if (wrapper.style.display === 'none' || wrapper.style.display === '') {
-    wrapper.style.display = 'block';
-  } else {
-    wrapper.style.display = 'none';
-  }
-}
-</script>
-<p>
-  This is an 18 and over website, adult themed, and slight nudity; anyone under 18 years of age is not allowed.
-</p>
+    <p class="order-description">
+      Request a custom video and include your preferred cast member, theme, length, and other details.
+    </p>
+
+    <div id="video-form" class="order-form-wrapper">
+      <form action="https://formsubmit.co/justlilome2001@gmail.com" method="POST" class="order-form">
+        <input type="hidden" name="_subject" value="New Personalized Video Order">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <label for="video-name">Your name</label>
+        <input id="video-name" type="text" name="Name" required>
+
+        <label for="video-email">Your email</label>
+        <input id="video-email" type="email" name="Email" required>
+
+        <label for="video-details">Describe what you want</label>
+        <textarea id="video-details" name="Order details" required></textarea>
+
+        <button class="order-submit" type="submit">Done - Submit Order</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="order-item">
+    <button class="order-button" type="button" onclick="toggleOrderForm('live-form')">
+      Live Studio
+    </button>
+
+    <p class="order-description">
+      Request a private performance and include your preferred date, time, and other details.
+    </p>
+
+    <div id="live-form" class="order-form-wrapper">
+      <form action="https://formsubmit.co/justlilome2001@gmail.com" method="POST" class="order-form">
+        <input type="hidden" name="_subject" value="New Live Studio Request">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <label for="live-name">Your name</label>
+        <input id="live-name" type="text" name="Name" required>
+
+        <label for="live-email">Your email</label>
+        <input id="live-email" type="email" name="Email" required>
+
+        <label for="live-date">Preferred date and time</label>
+        <input id="live-date" type="text" name="Preferred date and time" required>
+
+        <label for="live-details">Describe your request</label>
+        <textarea id="live-details" name="Request details" required></textarea>
+
+        <button class="order-submit" type="submit">Done - Submit Request</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="order-item">
+    <button class="order-button" type="button" onclick="toggleOrderForm('custom-form')">
+      Custom Request
+    </button>
+
+    <p class="order-description">
+      Request another item or service and explain exactly what you would like.
+    </p>
+
+    <div id="custom-form" class="order-form-wrapper">
+      <form action="https://formsubmit.co/justlilome2001@gmail.com" method="POST" class="order-form">
+        <input type="hidden" name="_subject" value="New Custom Request">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <label for="custom-name">Your name</label>
+        <input id="custom-name" type="text" name="Name" required>
+
+        <label for="custom-email">Your email</label>
+        <input id="custom-email" type="email" name="Email" required>
+
+        <label for="custom-item">Item or service</label>
+        <input id="custom-item" type="text" name="Item or service" required>
+
+        <label for="custom-details">Describe your request</label>
+        <textarea id="custom-details" name="Request details" required></textarea>
+
+        <button class="order-submit" type="submit">Done - Submit Request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="idea-block">
+  <h2 class="idea-title">Model used</h2>
+  <div class="idea-card">
+    <video class="idea-video" controls loop playsinline>
+      <source src="headjob.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 </div>
+
+<p class="theme-note">
+  If one of these themes interests you, mention it in your request and describe the vibe, number of photos or clips, and how soft or intense you want the teasing.
+</p>
+
+<p>
+  If you would like to request an adult-themed personalized video, add the details in the form above. I will respond with delivery and payment information.
+</p>
+
+<button class="video-toggle" type="button" onclick="toggleHelpVideo()">
+  Play Teaser
+</button>
+
+<div id="help-video-wrapper" class="help-video-wrapper">
+  <button class="cta" type="button" onclick="window.location.href='index.html';">
+    ⟵ Back to Home
+  </button>
+
+  <video class="help-video" controls loop playsinline>
+    <source src="headjob.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<p class="age-notice">
+  This is an 18-and-over website with adult themes and slight nudity. Anyone under 18 years of age is not allowed.
+</p>
+
+  </div>
+  <script>
+    function toggleOrderForm(formId) {
+      const form = document.getElementById(formId);
+      form.classList.toggle("open");
+    }
+
+    function toggleHelpVideo() {
+      const wrapper = document.getElementById("help-video-wrapper");
+
+      if (wrapper.style.display === "block") {
+        wrapper.style.display = "none";
+      } else {
+        wrapper.style.display = "block";
+      }
+    }
+  </script>
 </body>
 </html>
-
-
-
-
