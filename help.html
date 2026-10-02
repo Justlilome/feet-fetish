@@ -234,10 +234,11 @@
     <div class="idea-block">
       <h2 class="idea-title">Model used</h2>
       <div class="idea-card">
-        <video class="idea-video" controls loop>
-         <source src="headjob.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <video class="idea-video" controls loop playsinline>
+  <source src="headjob.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+       
       </div>
     </div>
 
@@ -278,21 +279,16 @@
 
 
 <script>
-  function toggleHelpVideo() {
-    var wrapper = document.getElementById('headjob.mp4-wrapper');
-    var iframe = document.getElementById('headjob.mp4');
+function toggleHelpVideo() {
+  const wrapper = document.getElementById('help-video-wrapper');
 
-    // Base URL WITHOUT autoplay
-    var baseSrc = ;
-
-    if (wrapper.style.display === 'none' || wrapper.style.display === '') {
-      // Show and autoplay
-      wrapper.style.display = 'block';
-      iframe.src = baseSrc + '?autoplay=1';
-    } else {
-      // Hide and stop
-      iframe.src = baseSrc;
-      wrapper.style.display = 'none';
+  if (wrapper.style.display === 'none' || wrapper.style.display === '') {
+    wrapper.style.display = 'block';
+  } else {
+    wrapper.style.display = 'none';
+  }
+}
+</script>
       
     }
   }
