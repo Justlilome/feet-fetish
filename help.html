@@ -177,7 +177,7 @@
       border: 0;
       border-radius: 999px;
       background: #ff00ff;
-      color: #ffffff;
+      color: #ff00ff;
       cursor: pointer;
       font-family: inherit;
       font-size: 1rem;
@@ -526,17 +526,22 @@
 
       if (wrapper.style.display === "block") {
         wrapper.style.display = "none";
-      } else {
+      } 
+      else {
         wrapper.style.display = "block";
       }
     }
   </script>
+    <button class="video-toggle" type="button" onclick="toggleHelpVideo()">
+  Play Teaser
+</button>
 
 <div class="idea-block">
   <h2 class="idea-title">Just a Quick Look...</h2>
   <div class="idea-card">
-    <video class="idea-video" controls loop playsinline>
-      <source src="headjob.mp4" type="video/mp4">
+    <video class="idea-video"> controls loop playsinline
+      <source src="headjob.mp4">
+      <type="video/mp4">
     </video>
   </div>
 
@@ -549,9 +554,7 @@
   If you would like to request an adult-themed personalized video, add the details in the form above. I will respond with delivery and payment information.
 </p>
 
-<button class="video-toggle" type="button" onclick="toggleHelpVideo()">
-  Play Teaser
-</button>
+
 
 <div id="help-video-wrapper" class="help-video-wrapper">
   <button class="cta" type="button" onclick="window.location.href='index.html';">
