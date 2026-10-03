@@ -291,131 +291,122 @@
     </p>
 
     <!-- IN-PERSON EXPERIENCES -->
-    <div class="service-category">
-      <h2 class="section-title">✨ In-Person Live Experiences</h2>
-      <p class="category-desc">Private studio performances with costumes, themed sets, drinks & snacks included</p>
 
-      <div class="order-item">
-        <button class="order-button" onclick="toggleOrderForm('form-live-studio')">
-          <span>Live Studio</span>
-          <span class="price-tag">$600</span>
-        </button>
-        <p class="order-description">30-minute live adult performance with both cast members. Private viewing in our secure studio.</p>
-        <div id="form-live-studio" class="order-form-wrapper">
-          <form action="https://formsubmit.co/justlilome2001@gmail.com" method="POST" class="order-form">
-            <input type="hidden" name="_subject" value="Live Studio Booking Request - $600">
-            <input type="hidden" name="_captcha" value="false">
-            
-            <div class="form-row">
-              <div>
-                <label>Your Name</label>
-                <input type="text" name="Name" required>
-              </div>
-              <div>
-                <label>Email</label>
-                <input type="email" name="Email" required>
-              </div>
-            </div>
+          <!-- LIVE STUDIO - WITH CALENDAR -->
+<div class="order-item" style="border: 2px solid rgba(255, 0, 255, 0.4);">
+  <button class="order-button" onclick="toggleOrderForm('form-live-studio')" style="background: rgba(255, 0, 255, 0.15);">
+    <span>🌟 Live Studio Experience</span>
+    <span class="price-tag">$600</span>
+  </button>
+  <p class="order-description">
+    <strong>30-minute in-person performance</strong> with both cast members. Private studio, themed costumes, complimentary drinks & snacks included.
+  </p>
+  
+  <div id="form-live-studio" class="order-form-wrapper">
+    <form action="https://formsubmit.co/justlilome2001@gmail.com" method="POST" class="order-form">
+      <input type="hidden" name="_subject" value="Live Studio Booking Request - $600">
+      <input type="hidden" name="_captcha" value="false">
+      
+      <!-- CALENDAR SECTION -->
+      <div style="background: rgba(255, 0, 255, 0.08); padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(255, 0, 255, 0.2);">
+        <h3 style="font-family: 'Birthstone', cursive; font-size: 2rem; color: #ff00ff; margin-top: 0; margin-bottom: 15px;">
+          📅 Select Your Date & Time
+        </h3>
+        
+        <div class="form-row">
+          <div>
+            <label style="color: #ff00ff; font-weight: 600;">Preferred Date *</label>
+            <input type="date" name="Preferred_Date" min="2026-10-04" required 
+                   style="font-size: 1.1rem; padding: 14px; cursor: pointer;">
+          </div>
+          <div>
+            <label style="color: #ff00ff; font-weight: 600;">Preferred Time *</label>
+            <select name="Preferred_Time" required style="font-size: 1.1rem; padding: 14px; cursor: pointer;">
+              <option value="">-- Choose Time --</option>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="1:00 PM">1:00 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+              <option value="3:00 PM">3:00 PM</option>
+              <option value="4:00 PM">4:00 PM</option>
+              <option value="5:00 PM">5:00 PM</option>
+              <option value="6:00 PM">6:00 PM</option>
+              <option value="7:00 PM">7:00 PM</option>
+              <option value="8:00 PM">8:00 PM</option>
+            </select>
+          </div>
+        </div>
 
-            <label>Preferred Date</label>
-            <input type="date" name="Preferred_Date" required>
-
-            <label>Preferred Time</label>
-            <input type="time" name="Preferred_Time" required>
-
-            <label>Special Requests / Theme</label>
-            <textarea name="Requests" placeholder="Costume preferences, specific scenarios, etc."></textarea>
-
-            <div class="checkbox-group">
-              <label><input type="checkbox" name="Age_Verify" required> I confirm I am 18+ years old</label>
-              <label><input type="checkbox" name="Terms" required> I agree to the terms of service</label>
-            </div>
-
-            <p class="note">50% deposit ($300) required to confirm booking. You'll receive payment instructions via email.</p>
-            <button class="order-submit" type="submit">Request Booking</button>
-          </form>
+        <div style="margin-top: 15px;">
+          <label style="color: #ff00ff; font-weight: 600;">Backup Date (Optional)</label>
+          <input type="date" name="Backup_Date" min="2026-10-04" 
+                   style="width: 50%; font-size: 1.1rem; padding: 14px;">
+          <p class="note">In case your first choice is unavailable</p>
         </div>
       </div>
 
-      <div class="order-item">
-        <button class="order-button" onclick="toggleOrderForm('form-personalized-live')">
-          <span>Personalized Live Studio</span>
-          <span class="price-tag">$850</span>
-        </button>
-        <p class="order-description">30-minute session where YOU direct the scene. Advance consultation included to plan your perfect experience.</p>
-        <div id="form-personalized-live" class="order-form-wrapper">
-          <form action="https://formsubmit.co/justlilome2001@gmail.com" method="POST" class="order-form">
-            <input type="hidden" name="_subject" value="Personalized Live Studio Request - $850">
-            <input type="hidden" name="_captcha" value="false">
-            
-            <div class="form-row">
-              <div>
-                <label>Your Name</label>
-                <input type="text" name="Name" required>
-              </div>
-              <div>
-                <label>Email</label>
-                <input type="email" name="Email" required>
-              </div>
-            </div>
-
-            <label>Preferred Date</label>
-            <input type="date" name="Preferred_Date" required>
-
-            <label>Describe Your Fantasy</label>
-            <textarea name="Fantasy_Details" required placeholder="Tell us exactly what you'd like to see, specific directions, dialogue, costumes, etc. The more detail, the better we can fulfill your vision."></textarea>
-
-            <div class="checkbox-group">
-              <label><input type="checkbox" name="Age_Verify" required> I confirm I am 18+ years old</label>
-              <label><input type="checkbox" name="Terms" required> I agree to the terms of service</label>
-            </div>
-
-            <p class="note">50% deposit ($425) required. We'll schedule a brief consultation call before your session.</p>
-            <button class="order-submit" type="submit">Request Booking</button>
-          </form>
+      <!-- CONTACT INFO -->
+      <h3 style="font-family: 'Birthstone', cursive; font-size: 1.8rem; color: #ff00ff; margin-bottom: 15px;">
+        Your Information
+      </h3>
+      
+      <div class="form-row">
+        <div>
+          <label>Your Name *</label>
+          <input type="text" name="Name" placeholder="First & Last" required>
+        </div>
+        <div>
+          <label>Email *</label>
+          <input type="email" name="Email" placeholder="your@email.com" required>
         </div>
       </div>
 
-      <div class="order-item">
-        <button class="order-button" onclick="toggleOrderForm('form-fetish-live')">
-          <span>Fetish Live Studio</span>
-          <span class="price-tag">$950</span>
-        </button>
-        <p class="order-description">30-minute specialized fetish session. Advance planning required for props, scenarios, and safety.</p>
-        <div id="form-fetish-live" class="order-form-wrapper">
-          <form action="https://formsubmit.co/justlilome2001@gmail.com" method="POST" class="order-form">
-            <input type="hidden" name="_subject" value="Fetish Live Studio Request - $950">
-            <input type="hidden" name="_captcha" value="false">
-            
-            <div class="form-row">
-              <div>
-                <label>Your Name</label>
-                <input type="text" name="Name" required>
-              </div>
-              <div>
-                <label>Email</label>
-                <input type="email" name="Email" required>
-              </div>
-            </div>
-
-            <label>Preferred Date</label>
-            <input type="date" name="Preferred_Date" required>
-
-            <label>Fetish / Scenario Details</label>
-            <textarea name="Fetish_Details" required placeholder="Describe your fetish, specific activities, limits, and any special equipment needed."></textarea>
-
-            <div class="checkbox-group">
-              <label><input type="checkbox" name="Age_Verify" required> I confirm I am 18+ years old</label>
-              <label><input type="checkbox" name="Terms" required> I agree to the terms of service</label>
-              <label><input type="checkbox" name="Safety" required> I understand safety protocols will be discussed</label>
-            </div>
-
-            <p class="note">50% deposit ($475) required. Safety consultation mandatory before booking.</p>
-            <button class="order-submit" type="submit">Request Booking</button>
-          </form>
+      <div class="form-row" style="margin-top: 15px;">
+        <div>
+          <label>Phone Number *</label>
+          <input type="tel" name="Phone" placeholder="For confirmation" required>
+        </div>
+        <div>
+          <label>How did you hear about us?</label>
+          <input type="text" name="Referral" placeholder="Google, Twitter, etc.">
         </div>
       </div>
-    </div>
+
+      <label style="margin-top: 20px;">Special Requests / Theme / Costumes</label>
+      <textarea name="Requests" placeholder="Tell us about any specific scenarios, outfit requests, or special accommodations needed..."></textarea>
+
+      <div class="checkbox-group" style="margin-top: 20px; padding: 15px; background: rgba(0,0,0,0.2); border-radius: 10px;">
+        <label style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px;">
+          <input type="checkbox" name="Age_Verify" required style="margin-top: 5px;">
+          <span>I confirm I am 18 years or older *</span>
+        </label>
+        <label style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px;">
+          <input type="checkbox" name="Terms" required style="margin-top: 5px;">
+          <span>I agree to the terms of service and understand that recording is strictly prohibited *</span>
+        </label>
+        <label style="display: flex; align-items: flex-start; gap: 10px;">
+          <input type="checkbox" name="Deposit" required style="margin-top: 5px;">
+          <span>I understand a 50% deposit ($300) is required to confirm this booking *</span>
+        </label>
+      </div>
+
+      <p class="note" style="margin-top: 15px; padding: 15px; background: rgba(255,0,255,0.05); border-radius: 8px;">
+        <strong>What happens next:</strong><br>
+        1. Submit this request<br>
+        2. We check availability and confirm within 24 hours<br>
+        3. You receive payment instructions for the $300 deposit<br>
+        4. Once paid, your session is confirmed!<br>
+        5. Balance ($300) due at the session
+      </p>
+
+      <button class="order-submit" type="submit" style="font-size: 1.2rem; padding: 16px;">
+        📨 Submit Booking Request
+      </button>
+    </form>
+  </div>
+</div>  
+          
 
     <!-- LIVE VIRTUAL -->
     <div class="service-category">
