@@ -281,14 +281,14 @@
       <div class="order-item">
         <button class="order-button" type="button" onclick="toggleOrderForm('form-live-studio')">
           <span>Live Studio Session (30 Min)</span>
-          <span class="price-tag">$600</span>
+          <span class="price-tag">$800</span>
         </button>
         <p class="order-description">
           An in-person 30-minute private performance at a secure location with both performers. Includes costume setup, drinks, and hospitality. Requires 24-hour advance booking.
         </p>
         <div id="form-live-studio" class="order-form-wrapper">
           <form action="https://formsubmit.co/justlilome2001@gmail.com" method="POST" class="order-form">
-            <input type="hidden" name="_subject" value="New Live Studio Request ($600)">
+            <input type="hidden" name="_subject" value="New Live Studio Request ($800)">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
 
@@ -296,6 +296,38 @@
             <input id="live-name" type="text" name="Name" required>
 
             <label for="live-email">Your Email</label>
+            <input id="live-email" type="email" name="Email" required>
+
+            <label for="live-datetime">Requested Date &amp; Time</label>
+            <input id="live-datetime" type="datetime-local" name="Requested Date & Time" required>
+
+            <label for="live-details">Describe Your Request &amp; Preferences</label>
+            <textarea id="live-details" name="Request Details" required placeholder="Specify themes, outfits, or specific requests..."></textarea>
+
+            <button class="order-submit" type="submit">Submit Booking Request</button>
+          </form>
+        </div>
+      </div>
+
+       
+
+      <div class="order-item">
+        <button class="order-button" type="button" onclick="toggleOrderForm('form-live-studio')">
+          <span>Live Personalized Studio Session (30 Min)</span>
+          <span class="price-tag">$1000</span>
+        </button>
+        <p class="order-description">
+          An in-person 30-minute private personalized performance at a secure location with both performers. Includes costume setup, drinks, and hospitality. Requires 24-hour advance booking.
+        </p>
+        <div id="form-live-studio" class="order-form-wrapper">
+          <form action="https://formsubmit.co/justlilome2001@gmail.com" method="POST" class="order-form">
+            <input type="hidden" name="_subject" value="New Live Studio Request ($1000)">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <label for="live-name">Your Name</label>
+            <input id="live-name" type="text"
+               <label for="live-email">Your Email</label>
             <input id="live-email" type="email" name="Email" required>
 
             <label for="live-datetime">Requested Date &amp; Time</label>
