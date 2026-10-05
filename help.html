@@ -516,6 +516,17 @@
     </section>
 
     <!-- TEASER VIDEO SECTION -->
+    <script>
+    function toggleOrderForm(formId) {
+      const form = document.getElementById(formId);
+      form.classList.toggle("open");
+    }
+
+    function toggleHelpVideo() {
+      const wrapper = document.getElementById("help-video-wrapper");
+      wrapper.style.display = (wrapper.style.display === "block") ? "none" : "block";
+    }
+    </script>
     <div style="text-align: center; margin-top: 30px;">
       <h2 class="idea-title">Just a Quick Look...</h2>
       <div class="idea-card" style="max-width: 400px; margin: 0 auto;">
@@ -542,16 +553,6 @@
 
   </div>
 
-  <script>
-    function toggleOrderForm(formId) {
-      const form = document.getElementById(formId);
-      form.classList.toggle("open");
-    }
-
-    function toggleHelpVideo() {
-      const wrapper = document.getElementById("help-video-wrapper");
-      wrapper.style.display = (wrapper.style.display === "block") ? "none" : "block";
-    }
-  </script>
+  
 </body>
 </html>
